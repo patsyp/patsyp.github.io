@@ -1,0 +1,88 @@
+*{
+	padding: 0px;
+	border: 0px;
+	margin: 0px;
+}
+#top-container a{
+	text-decoration: none;
+	margin:10px;
+	font-size: 25px;
+	color: white;
+	padding: 5px;
+	float: right;
+}
+#top-container{
+	background-image: url("../images/dtown.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+   	width: 100%;
+   	padding-top: 15px;
+}
+#text-holder{
+	text-align: center;
+	font-size: 2em;
+	background-color: rgba(68, 161, 167, 0.6);
+	width: 33%;
+	border-radius: 8px;
+	padding: 10px;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+ 	 /* bring your own prefixes */
+  	transform: translate(-50%, -50%);
+}
+#text-holder h2{
+	margin-bottom: 15px;
+}
+#bottom-container{
+	width: 100%;
+	/*height: 70px;*/
+	padding-top: 25px;
+	background-color: black;
+	color: white;
+}
+.icons, .bottom-content{
+	display: inline-block;
+}
+.icons{
+	margin-left: 300px;
+}
+ul, li{
+	list-style-type: none;
+	display: inline-block;
+}
+.bottom-content{
+	vertical-align: top;
+	font-size: 25px
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  /*border-radius: 50%;*/
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-twitter {
+ /* border: 2px solid #55ACEE;
+  width: 1%;*/
+  color: white;
+
+}
+.fa-github{
+	/*border: 2px solid white;
+	width: 1%;*/
+  	color: white;
+}
+.fa-linkedin {
+/*  border: 2px solid #007bb5;
+  width: 1%;*/
+  color: white;
