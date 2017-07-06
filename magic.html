@@ -10,11 +10,13 @@
 		$(document).ready(function(){
 			$("#enter").click(function(){
 				var stopFunction = clearInterval(startFunction)
-				$("#firstPage").show("slow")
+			$("#magic").slideUp()
+			$("#enter").slideUp()
+			$("#firstPage").show("slow")
 			})
 		})
 	</script>
-	<style>
+<!-- 	<style>
 		body {
 			background-color:black;
 			font-family: monospace;
@@ -29,7 +31,7 @@
 			padding-right: 7px;
 			display: inline;
 		}
-	</style>
+	</style> -->
 </head>
 <body>
 	<div id="magic"></div>
@@ -56,19 +58,29 @@
 			}
 		}
 		var startFunction = setInterval(updateText,150);
-		startFunction()
-		
+		startFunction()	
 	</script>
-	<div>
-	<button class="btn btn-default btn-lg" id="enter">Enter</a>
-	</div>
-	<div id="firstPage">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		
+	<button class="btn btn-default btn-lg" id="enter">Enter</button>
+	
+	
+	<div  id="firstPage">
+		<div >
+			<img id="about-me" src="images/about-me.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		<h3>Projects</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 	</div>
 </body>
 </html>
