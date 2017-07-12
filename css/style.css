@@ -3,17 +3,11 @@
 	border: 0px;
 	margin: 0px;
 }
-/*#firstPage{
-	background-color: white;
-	width: 100%;
-	display: none;
-}*/
 #magic{
 	background-color:white;
 	font-family: monospace;
 	font-size:4rem;
 	text-align: center;
-	margin-top:20%;
 	border-right: 1px solid #777;
 	padding-right: 7px;
 	display: inline;
@@ -25,56 +19,21 @@
 #enter{
 	display: inline;
   	position: absolute;
-  	top: 50%;
+  	top: 70%;
   	left: 50%;
   	transform: translate(-50%, -50%);
 }
-#about-me{
-	width: 15%;
-	border-radius: 50%;
-}
-#top-container a{
+/*#top-container a{
 	text-decoration: none;
 	margin:10px;
 	font-size: 25px;
 	color: white;
 	padding: 5px;
 	float: right;
-}
-#firstPage{
-	background-image: url("../images/dtown.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 100vh;
-   	width: 100%;
-   	padding-top: 15px;
+}*/
+#mainPage{
    	display: none;
    	color: black;
-}
-#firstPage p{
-display: inline-block;
-}
-#text-holder{
-	text-align: center;
-	font-size: 2em;
-	background-color: rgba(68, 161, 167, 0.6);
-	width: 33%;
-	border-radius: 8px;
-	padding: 10px;
-  	position: absolute;
-  	top: 50%;
-  	left: 50%;
- 	 /* bring your own prefixes */
-  	transform: translate(-50%, -50%);
-}
-#text-holder h2{
-	margin-bottom: 15px;
-}
-#icons{
-	display: inline-block;
-	margin-top: 17%;
 }
 #icons li{
 	display: block;
@@ -91,7 +50,7 @@ display: inline-block;
   margin: 5px 2px;
   /*border-radius: 50%;*/
 }
-.fa:hover {
+.fa:hover{
     opacity: 0.7;
 }
 .fa-twitter {
