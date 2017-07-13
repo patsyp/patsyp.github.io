@@ -23,19 +23,35 @@
   	left: 50%;
   	transform: translate(-50%, -50%);
 }
-/*#top-container a{
-	text-decoration: none;
-	margin:10px;
-	font-size: 25px;
-	color: white;
-	padding: 5px;
-	float: right;
-}*/
-#mainPage{
-   	display: none;
-   	color: black;
+#intro{
+	background-image: url("../images/desk.jpg");
+    /*background-attachment: fixed;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 70vh;
+   	width: 100%;
+   	margin-bottom: 5%;
 }
-#icons li{
+#intro div{
+	position: absolute;
+  	top: 29%;
+  	left: 65%;
+  	transform: translate(-50%, -50%);
+  	color: #60b3f3;
+}
+#intro h1{
+	font-weight: 600;
+	font-size: 50px;
+	margin-bottom: 10%;
+}
+#contact{
+	background-color: #000000;
+}
+/*.appear{
+   	display: none;
+}*/
+/*#icons li{
 	display: block;
 	width: 75%;
 	padding-left: 10px;
@@ -49,7 +65,7 @@
   text-decoration: none;
   margin: 5px 2px;
   /*border-radius: 50%;*/
-}
+/*}
 .fa:hover{
     opacity: 0.7;
 }
@@ -67,4 +83,4 @@
 .fa-linkedin {
   border: 2px solid #007bb5;
   width: 45%;
-  background-color: #0808a9;
+  background-color: #0808a9;*/*/
