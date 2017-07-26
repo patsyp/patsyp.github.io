@@ -48,39 +48,7 @@
 #contact{
 	background-color: #000000;
 }
-/*.appear{
-   	display: none;
-}*/
-/*#icons li{
-	display: block;
-	width: 75%;
-	padding-left: 10px;
-	padding-bottom: 100px;
+#skills img{
+    width: 5%;
+    height: 5%;
 }
-.fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  /*border-radius: 50%;*/
-/*}
-.fa:hover{
-    opacity: 0.7;
-}
-.fa-twitter {
-  border: 2px solid #55ACEE;
-  width: 45%;
-  background-color: #0808a9;
-
-}
-.fa-github{
-	border: 2px solid white;
-	width: 45%;
- 	background-color: black
-}
-.fa-linkedin {
-  border: 2px solid #007bb5;
-  width: 45%;
-  background-color: #0808a9;*/*/

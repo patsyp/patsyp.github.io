@@ -2,24 +2,26 @@
 <html>
 <head>
 	<title>About Me</title>
-	<
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- 	<script type="text/javascript">
+	<script type="text/javascript">
 		$(document).ready(function(){
-			$("#enter").click(function(){
-				var stopFunction = clearInterval(startFunction)
-			$(".disappear").slideUp()
-			$(".appear").show("slow")
+			// $("#enter").click(function(){
+			// 	var stopFunction = clearInterval(startFunction)
+			// $(".disappear").slideUp()
+			// $(".appear").show("slow")
+			// })
+			$('#skills img').hover(function(){
+				
 			})
 		})
 	</script>
 </head>
 <body>
-	<div id="magic" class="disappear"></div>
+<!-- 	<div id="magic" class="disappear"></div>
 	<script>
 	var messages = ["Hello World!", "My name is Patsy.", "I am a Developer."]
 		el = document.getElementById('magic'),
@@ -45,7 +47,7 @@
 		var startFunction = setInterval(updateText,100);
 	</script>
 
-	<button class="btn btn-default btn-lg disappear" id="enter">Enter</button> -->
+	<button class="btn btn-default btn-lg disappear" id="enter">Enter</button> --> -->
 <!-- End of Message Iterator -->
 	<div class="appear">	
 		<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
@@ -57,6 +59,9 @@
 		     		<li class="nav-item">
 		      	  		<a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
 		     		</li>
+		     		<li class="nav-item">
+		       			<a class="nav-link" href="#skills">Skills</a>
+		      		</li>
 		      		<li class="nav-item">
 		        		<a class="nav-link" href="#">Projects</a>
 		      		</li>
@@ -75,33 +80,56 @@
 
 		<section class="container" id="about">
 			<h1>About Me</h3>
-			<p>I am a developer comfortable in both backend and frontend work. 
-		<!-- 	I have a bachelor of arts from Carleton College 
-			Became a coding ninja at the Coding Dojo
-			Located in Dallas -->
-			<!-- I love the constant challenge that coding offers and the numerous possibilities in which one can approach a problem. -->
-			<!-- On my free time I am...
-				playing with my dog and cat
-				discovering a new recipe in my kitchen
-				and exploring red wine and writing sonnets -->
-
+			<p>I am a developer comfortable in both backend and frontend work. My favorite thing about coding is the problem solving challenge that it offers and the numerous possibilities one can take to find a solution.  I gained many of my coding skills(and ninja skills) at Coding Dojo, an intensive web development program located in Dallas, but I am also a graduate of Carleton College.  When I am not coding I am usually playing with my dog and cat, discovering a new recipe in my kitchen, or writing sonnets.
 			</p>
-			<ul>
-				<li></li>
-			</ul>
 		</section>
 
 		<section class="container" id="skills">
 			<h1>Skills</h1>
-			<p>Languages: JavaScript, Python, Ruby
-
-Front-End: AngularJS, Bootstrap, Materialize, HTML, CSS, API’s
-
-Frameworks: Flask, Django, Rails
-
-Databases: SQLite, MySQL, PostgreSQL, MongoDB
-
-Other: AWS, JQuery, Git, Github, Socket.io, Node.js, Alexa Skills</p>
+			<div class='row'>
+				<img src='images/CSS.png'>
+				<img src='images/ajax.png'>
+				<img src='images/angular.png'>
+				<img src='images/bootstrap.png'>
+				<img src='images/CSS.png'>
+				<img src='images/django.png'>
+				<img src='images/expressjs.png'>
+				<img src='images/github.png'>
+				<img src='images/HTML.png'>
+				<img src='images/JavaScript.png'>
+				<img src='images/jQuery.png'>
+				<img src='images/materialize.png'>
+				<img src='images/MEAN.png'>
+				<img src='images/mongodb.png'>
+				<img src='images/mysql.png'>
+				<img src='images/nodejs.png'>
+				<img src='images/python.png'>
+				<img src='images/RUBY.png'>
+				<img src='images/socket.png'>
+				<img src='images/sqlite.png'>
+			</div>
+			<div class='row'>
+				<div class='col-md-3'>
+					<h3>Languages</h3>
+						<p>JavaScript, Python, Ruby</p>
+				</div>
+				<div class='col-md-2'>
+				<h3>Front-End</h3>
+					<p>AngularJS, Bootstrap, Materialize, HTML, CSS, API’s, jQuery</p>
+				</div>
+				<div class='col-md-2'>
+				<h3>Frameworks</h3>
+					<p>Flask, Django, Rails</p>
+				</div>
+				<div class='col-md-2'>
+				<h3>Databases</h3>
+					<p>SQLite, MySQL, PostgreSQL, MongoDB</p>
+				</div>
+				<div class='col-md-2'>
+				<h3>Other</h3>
+					<p>MVC structures, AWS, Git, Github, Socket.io, Node.js, Alexa Skills</p>
+				</div>
+			</div>
 		</section>
 
 		<section>
