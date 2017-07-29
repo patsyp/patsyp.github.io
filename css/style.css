@@ -52,7 +52,14 @@
     width: 5%;
     height: 5%;
 }
+#projects .row{
+  margin: 4%;
+}
 #projects img{
   width: 100%;
   border: 1px solid gray;
+}
+.des{
+  margin-top: 5%;
+  margin-left: 5%;
 }
