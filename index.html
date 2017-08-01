@@ -7,21 +7,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script type="text/javascript">
+<!-- 	<script type="text/javascript">
 		$(document).ready(function(){
-			// $("#enter").click(function(){
-			// 	var stopFunction = clearInterval(startFunction)
-			// $(".disappear").slideUp()
-			// $(".appear").show("slow")
-			// })
-			$('#skills img').hover(function(){
-
+			$("#enter").click(function(){
+				var stopFunction = clearInterval(startFunction)
+			$(".disappear").slideUp()
+			$(".appear").show("slow")
 			})
 		})
-	</script>
+	</script> -->
 </head>
 <body>
-<!-- 	<div id="magic" class="disappear"></div>
+<!-- 	<div class="disappear" id='hide'>
+	<div class="disappear" id="magic"></div>
 	<script>
 	var messages = ["Hello World!", "My name is Patsy.", "I am a Developer."]
 		el = document.getElementById('magic'),
@@ -47,9 +45,10 @@
 		var startFunction = setInterval(updateText,100);
 	</script>
 
-	<button class="btn btn-default btn-lg disappear" id="enter">Enter</button> --> 
+	<button class="btn btn-default btn-lg disappear" id="enter">Enter</button> 
+	</div> -->
 <!-- End of Message Iterator -->
-	<div class="appear">	
+<!-- 	<div class="appear"> -->	
 		<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
 	  		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	   			<span class="navbar-toggler-icon"></span>
@@ -79,21 +78,22 @@
 		</section>
 
 		<section class="container" id="about">
-			<h1>About Me</h3>
+			<h1>About Me</h1>
 			<div class="row">
 				<div class="col-md-5">
 					<img src="images/meandCinna.jpg">
 				</div>
 				<div class="col-md-7">
-					<p>I am a developer comfortable in both backend and frontend work. My favorite thing about coding is the problem solving challenge that it offers and the numerous possibilities one can take to find a solution.  I gained many of my coding skills(and ninja skills) at Coding Dojo, an intensive web development program located in Dallas, but I am also a graduate of Carleton College.  When I am not coding I am usually playing with my dog and cat, discovering a new recipe in my kitchen, or writing sonnets.
+					<p class="text-center">I am a developer comfortable in both backend and frontend work. My favorite thing about coding is the problem solving challenge that it offers and the numerous possibilities one can take to find a solution.  I gained many of my coding skills (and ninja skills) at Coding Dojo, an intensive web development program located in Dallas, but I am also a graduate of Carleton College.  When I am not coding I am usually playing with my dog and cat, discovering a new recipe in my kitchen, or writing sonnets.
 					</p>
 				</div>
 			</div>
 		</section>
 
-		<section id="skills">
+		<section id="skills"> 
 			<div class="container">
 				<h1 class="heading">Skills</h1>
+				<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
 			<!-- 	<div class='row'>
 					<img src='images/CSS.png'>
 					<img src='images/ajax.png'>
@@ -168,12 +168,12 @@
 			<div class="row">
 				<div class="col-md-4">
 					<h3>Favorite Quotes</h3>
-					<img src="images/favQuotes.png">
+					<a href="http://52.37.70.15/" target="_blank"><img src="images/favQuotes.png"></a>
 				</div>
 				<div class="col-md-6 des">
-					<h5>Python, Django, and Bootstrap</h5>
+					<h5>Python, Django, and MySql</h5>
 					<p>Includes a login/registration page with validations.  A user can look at quotes and add any to a favorite's list.  They can also submit quotes and view other member profiles.</p>
-					<a href="https://github.com/patysp/Favorite_Quotes" target="_blank">See code here.</a>
+					<a href="https://github.com/patsyp/Favorite_Quotes" target="_blank">See code here.</a>
 				</div>
 			</div>
 		</section>
@@ -192,5 +192,6 @@
 		       	</div> 
 			</div>
 		</div>
+	<!-- 	</div> -->
 	</body>
 </html>
