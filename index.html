@@ -6,76 +6,67 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- 	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#enter").click(function(){
-				var stopFunction = clearInterval(startFunction)
-			$(".disappear").slideUp()
-			$(".appear").show("slow")
-			})
-		})
-	</script> -->
 </head>
 <body>
-<!-- 	<div class="disappear" id='hide'>
-	<div class="disappear" id="magic"></div>
-	<script>
-	var messages = ["Hello World!", "My name is Patsy.", "I am a Developer."]
-		el = document.getElementById('magic'),
-			word_counter = 0,
-			character_counter = 0;
-		function updateText()
-		{
-			if(messages[word_counter][character_counter]== ' '){
-				el.innerHTML = el.innerHTML+ '&nbsp;'
-				character_counter++;
-			}
-			else{
-				el.innerHTML = el.innerHTML+messages[word_counter][character_counter++];}
-			if(character_counter > messages[word_counter].length)
-			{
-				word_counter++; 	
-				character_counter = 0;	
-				el.innerHTML = '';  
-				if(word_counter == messages.length)
-					word_counter = 0;
-			}
-		}
-		var startFunction = setInterval(updateText,100);
-	</script>
-
-	<button class="btn btn-default btn-lg disappear" id="enter">Enter</button> 
-	</div> -->
-<!-- End of Message Iterator -->
-<!-- 	<div class="appear"> -->	
-		<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
-	  		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-	   			<span class="navbar-toggler-icon"></span>
-	  		</button>
-  			<div class="collapse navbar-collapse" id="navbarNav">
+	<section id="intro">	
+		<nav class="navbar navbar-toggleable-md navbar-inverse">
+		  	<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		   		<span class="navbar-toggler-icon"></span>
+		  	</button>
+			<a class="navbar-brand" href="#">Patsy Pineda</a>
+			<div class="collapse navbar-collapse" id="navbarNav">
 		    	<ul class="navbar-nav">
 		     		<li class="nav-item">
 		      	  		<a class="nav-link" href="#about">About Me <span class="sr-only">(current)</span></a>
 		     		</li>
+		      		<li class="nav-item">
+		        		<a class="nav-link" href="#skills">Skills</a>
+		      		</li>
+		      		<li class="nav-item">
+		       			<a class="nav-link" href="#projects">Projects</a>
+		      		</li>
 		     		<li class="nav-item">
-		       			<a class="nav-link" href="#skills">Skills</a>
-		      		</li>
-		      		<li class="nav-item">
-		        		<a class="nav-link" href="#projects">Projects</a>
-		      		</li>
-		      		<li class="nav-item">
-		       			<a class="nav-link" href="#contact">Contact</a>
+		        		<a class="nav-link" href="#contact">Contact</a>
 		      		</li>
 		    	</ul>
-  			</div>
-		</nav>
-		<section id="intro">
-			<div>
-				<h1>Patsy Pineda</h1>
-				<h2>I love to learn, create, and problem solve!</h2>
 			</div>
-		</section>
+		</nav>
+		<div id="text"></div>
+			<!-- <h1>Patsy Pineda</h1>
+			<h2>I love to learn, create, and problem solve!</h2> -->
+		<script>
+		var rep = 0
+		var messages = ["Hello World!", "My name is Patsy.", "I am a Developer."]
+			el = document.getElementById('text'),
+				word_counter = 0,
+				character_counter = 0;
+			function updateText()
+			{
+				if(messages[word_counter][character_counter]== ' '){
+					el.innerHTML = el.innerHTML+ '&nbsp;'
+					character_counter++;
+				}
+				else{
+					el.innerHTML = el.innerHTML+messages[word_counter][character_counter++];}
+				if(character_counter > messages[word_counter].length)
+				{
+					word_counter++; 	
+					character_counter = 0;	
+					el.innerHTML = '';  
+					if(word_counter == messages.length)
+						word_counter = 0;
+						rep++
+				}
+				if(rep >2){
+					clearInterval(startFunction)
+				}
+			}
+			var startFunction=setInterval(updateText,100);
+		</script>
+		<!-- End of Message Iterator -->
+	</section>
 
 		<section class="container" id="about">
 			<h1>About Me</h1>
@@ -192,5 +183,6 @@
 	       	</div> 
 		</div>
 	<!-- 	</div> -->
+
 	</body>
 </html>
