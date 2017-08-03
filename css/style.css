@@ -29,7 +29,10 @@
   color: white;
 }*/
 #intro{
-	background-image: url("../images/desk.jpg");
+	background-image: linear-gradient(
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.6)
+    ), url("../images/dtown.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -76,7 +79,7 @@
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.6)
-    ), url("../images/dtown.jpg");
+    ), url("../images/desk.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
