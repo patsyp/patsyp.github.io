@@ -24,7 +24,7 @@
   border: 1px #05abe4;
   border-style: dotted hidden dotted hidden;
   font-size: 1.5rem!important;
-  text-shadow: -3px 2px #0675ab;
+  text-shadow: -3px -1px #0675ab;
 }
 .navbar-collapse.collapse.in {
   display: block!important;
@@ -39,18 +39,6 @@
   width: 100%;
   margin-bottom: 4%;
 }
-/*#text{
-	position: absolute;
-  top: 29%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  color: #60b3f3;
-}
-#intro h1{
-	font-weight: 600;
-	font-size: 50px;
-	margin-bottom: 10%;
-}*/
 #about .row{
   margin: 4%;
 }
@@ -72,7 +60,7 @@
 }
 #skills{
   background-image: linear-gradient(
-      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.5),
       rgba(0, 0, 0, 0.6)
     ), url("../images/desk.jpg");
   background-repeat: no-repeat;
@@ -92,6 +80,9 @@
 #skills h3{
   text-decoration: underline;
   margin-bottom: 5%;
+}
+#skills p{
+  font-size: 20px;
 }
 #projects .row{
   margin: 4%;
@@ -114,15 +105,17 @@
 }
 #contact{
   color: #87a4a9;
+  margin-right: 0;
+  padding-right: 0;
 }
 #contact-heading{
-  margin-top: 2%;
-  margin-left: 5%;
+  margin: 2% 8% 0 8%;
 }
 #icons{
   font-size: 1.5rem;
   margin-top: 8%;
 }
 #icons a{
-  margin-right: 2%
+  margin-right: 2%;
+  text-decoration:none;
 }
