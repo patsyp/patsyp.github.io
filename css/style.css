@@ -6,14 +6,61 @@
 #text{
 	font-family: monospace;
 	font-size:4rem;
-	text-align: center;
-	border-right: 1px solid #777;
 	padding-right: 7px;
-	display: inline;
-  position: absolute;
+  position: relative;
   top: 30%;
   left: 15%;
   color: #eae9ae;
+  text-shadow: -3px -1px #000000;
+}
+#text h1{
+  animation: slideIn 2s;
+  -webkit-animation: slideIn 2s;
+  animation-timing-function: ease;
+}
+@keyframes slideIn{
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#text h2{
+  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+  -ms-animation: fadein 5s; /* Internet Explorer */
+  animation: fadein 5s;
+  animation-timing-function: ease-in;
+}
+#text span{
+  -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+  -ms-animation: fadein 6s; /* Internet Explorer */
+  animation: fadein 6s;
+  animation-timing-function: ease-in;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
 .navbar.navbar-inverse{
    background-color: rgba(0, 0, 0, 0.4);
@@ -119,3 +166,5 @@
   margin-right: 2%;
   text-decoration:none;
 }
+
+
