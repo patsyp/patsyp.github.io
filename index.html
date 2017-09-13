@@ -32,39 +32,11 @@
 			    	</ul>
 				</div>
 			</nav>
-			<div id="text"></div>
-				<!-- <h1>Patsy Pineda</h1>
-				<h2>I love to learn, create, and problem solve!</h2> -->
-			<script>
-			var rep = 0
-			var messages = ["Hello World!", "My name is Patsy.", "I am a Developer."]
-				el = document.getElementById('text'),
-					word_counter = 0,
-					character_counter = 0;
-				function updateText()
-				{
-					if(messages[word_counter][character_counter]== ' '){
-						el.innerHTML = el.innerHTML+ '&nbsp;'
-						character_counter++;
-					}
-					else{
-						el.innerHTML = el.innerHTML+messages[word_counter][character_counter++];}
-					if(character_counter > messages[word_counter].length)
-					{
-						word_counter++; 	
-						character_counter = 0;	
-						el.innerHTML = '';  
-						if(word_counter == messages.length)
-							word_counter = 0;
-							rep++
-					}
-					// if(rep >2){
-					// 	clearInterval(startFunction)
-					// }
-				}
-				var startFunction=setInterval(updateText,100);
-			</script>
-			<!-- End of Message Iterator -->
+			<div id="text">
+				<h1>Hello World!</h1>
+				<h2>My name is Patsy. I am a Developer.</h2>
+				<h2></h2>
+			</div>
 		</section>
 
 		<section class="container" id="about">
