@@ -7,20 +7,45 @@
 	font-family: monospace;
 	font-size:4rem;
 	padding-right: 7px;
-	display: inline;
-  position: absolute;
+  position: relative;
   top: 30%;
   left: 15%;
   color: #eae9ae;
+  text-shadow: -3px -1px #000000;
+}
+#text h1{
+  animation: slideIn 2s;
+  -webkit-animation: slideIn 2s;
+  animation-timing-function: ease;
+}
+@keyframes slideIn{
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 #text h2{
   -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 5s; /* Firefox < 16 */
   -ms-animation: fadein 5s; /* Internet Explorer */
-  -o-animation: fadein 5s; /* Opera < 12.1 */
   animation: fadein 5s;
+  animation-timing-function: ease-in;
 }
-
+#text span{
+  -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+  -ms-animation: fadein 6s; /* Internet Explorer */
+  animation: fadein 6s;
+  animation-timing-function: ease-in;
+}
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
